@@ -13,3 +13,35 @@ Available at: https://www.kaggle.com/datasets/mdtalhask/ai-powered-resume-screen
 - Perform feature engineering when necessary
 - Split the data into training and testing sets
 - Save processed features
+
+## 2. Modeling and Evaluation
+- We used MinMax scaling to normalize the feature values.
+- Train and compare multiple machine learning models:
+    - Logistic Regression
+    - Perceptron
+    - Linear SVM
+    - Multinomial NB
+    - KNN (cosine)
+    - Decision Tree
+    - Random Forest
+    - XGBoost
+- Evaluate model performance using the F1-score
+    - Using cross-validation to improve the evaluation reliability.
+    - Address class imbalance using SMOTE.
+    - Report ROC-AUC and PR-AUC
+- Identify the best-performing model: XGBoost
+  
+## 3. Ablation and Analysis
+We will compare model performance using different feature groups:
+- Numeric-only model
+- Text-only model
+- Combined model
+
+We also included:
+- Performance comparison table
+
+## Discussion:
+- Best performing model
+- Effect of different feature groups
+- Limitations of the current approach
+- Possible improvements
